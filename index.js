@@ -1,3 +1,4 @@
+// this select a choice between rock, paper and scissors
 function randomChoice() {
     /* generate number between 1 and 9 */
       let range = Math.floor(Math.random() * 9 + 1)
@@ -12,6 +13,7 @@ function randomChoice() {
       }
     }
 
+// this decides which choice wins the round
 function judge(humanChoice, cpuChoice) {
         if (humanChoice === 'Rock' && cpuChoice === 'Rock') {
             return 'Tie'
@@ -33,3 +35,17 @@ function judge(humanChoice, cpuChoice) {
             return 'Tie'
         }
     }
+
+// this keeps track of the scores
+function scoreKeeper() {
+    if (decision === 'You win') {
+    humanScore += 1
+    } else if (decision === 'You lose') {
+    cpuScore += 1
+    }
+}
+
+let decision = judge(humanChoice, cpuChoice)
+let humanScore = 0
+let cpuScore = 0
+
