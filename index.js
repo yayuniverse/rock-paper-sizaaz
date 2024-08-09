@@ -11,3 +11,25 @@ function randomChoice() {
         return 'Scissors'
       }
     }
+
+function judge(humanChoice, cpuChoice) {
+        if (humanChoice === 'Rock' && cpuChoice === 'Rock') {
+            return 'Tie'
+        } else if (humanChoice === 'Rock' && cpuChoice === 'Paper') {
+            return 'You lose'
+        } else if (humanChoice === 'Rock' && cpuChoice === 'Scissors') {
+            return 'You win'
+        } else if (humanChoice === 'Paper' && cpuChoice === 'Rock') {
+            return 'You win'
+        } else if (humanChoice === 'Paper' && cpuChoice === 'Paper') {
+            return 'Tie'
+        } else if (humanChoice === 'Paper' && cpuChoice === 'Scissors') {
+            return 'You lose'
+        } else if (humanChoice === 'Scissors' && cpuChoice === 'Rock') {
+            return 'You lose'
+        } else if (humanChoice === 'Scissors' && cpuChoice === 'Paper') {
+            return 'You win'
+        } else if (humanChoice === 'Scissors' && cpuChoice === 'Scissors') {
+            return 'Tie'
+        }
+    }
