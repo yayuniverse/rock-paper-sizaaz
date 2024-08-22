@@ -44,8 +44,10 @@ function disableBtns() {
   scissorsBtn.disabled = true;
 }
 
+/* i know the use of the switch statement is unconventional, and longer than a 
+regular if/else statement, will keep it in cuz why not? */
 function gameKeeper() {
-  switch (3) {
+  switch (5) {
     case humanScore:
       disableBtns();
       gameEndText.textContent = "Game won";
