@@ -1,12 +1,6 @@
 function randomChoice() {
-  let range = Math.floor(Math.random() * 9 + 1);
-  if (range <= 3) {
-    return "Rock";
-  } else if (range === 4 || range === 5 || range === 6) {
-    return "Paper";
-  } else if (range === 7 || range === 8 || range === 9) {
-    return "Scissors";
-  }
+  let range = ["Rock", "Paper", "Scissors"];
+  return range[Math.floor(Math.random() * 3)];  
 }
 
 function judge(humanChoice, cpuChoice) {
